@@ -1,0 +1,9 @@
+FROM nginx:latest
+
+RUN apt-get update && \
+    apt-get install -y net-tools iproute2 iputils-ping && 
+
+COPY workspace/ /usr/share/nginx/html/
+
+# Exposer le port 80 pour Nginx
+EXPOSE 80
