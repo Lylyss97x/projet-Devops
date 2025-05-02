@@ -5,5 +5,3 @@ RUN apt-get update && \
 
 COPY . /usr/share/nginx/html/
 
-# Exposer le port 80 pour Nginx
-EXPOSE 80
